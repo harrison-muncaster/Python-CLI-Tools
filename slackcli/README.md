@@ -14,7 +14,7 @@ python3 setup.py install
 ```
 
 ### Enviroment Variables
-To use the User & Channel commands you will need the Slack token. For token, contact harrison.muncaster@bird.co. 
+To use the User & Channel commands you will need the Slack token.
 
 Once you have the token you will need to add it to your bash profile. Open 
 ~/.bash_profile in terminal and add the following line:
@@ -30,27 +30,27 @@ From any directory in terminal you can access the help menu by entering `slack`.
 ##### slack export [FILEPATH] [OPTIONS] -u [USER EMAIL] -c [CHANNEL NAME] -d [DATE RANGE]
 
 ```
-slack export ~/Desktop/file.zip -u dakota@bird.co -c _it_all -d 01/01/2020 02/02/2020
+slack export ~/Desktop/file.zip -u dakota@company.co -c _it_all -d 01/01/2020 02/02/2020
 ```
 
 >Using all 3 options would output a PDF of conversations within 
-the specified date range from channel `_it_all` if the user `dakota@bird.co`
+the specified date range from channel `_it_all` if the user `dakota@company.co`
 was active or mentioned in it. 
 
 
 ```
-slack export ~/Desktop/file.zip -u bob@bird.co
+slack export ~/Desktop/file.zip -u bob@company.co
 ```
 > Using only the user option would output PDFs of all conversations
-(DMs, MPDMs, Private / Public channels) the user `bob@bird.co`
+(DMs, MPDMs, Private / Public channels) the user `bob@company.co`
 was apart of / active in for the entire date range of the zip file.
 
 
 ```
-slack export ~/Desktop/file.zip -c ot-santa-monica
+slack export ~/Desktop/file.zip -c general
 ```
 > Using only the channel option would output a PDF of the channel
-`ot-santa-monica` history for the entire date range of the zip file.
+`general` history for the entire date range of the zip file.
 
 ```
 slack export ~/Desktop/file.zip -d 06/17/2019 01/01/2020
@@ -62,7 +62,7 @@ all Private/Public channels within the specified date range.
 
 ##### slack user [EMAIL or ID]
 ```
-slack user harrison@bird.co
+slack user harrison@company.co
 slack user AE2335H6
 ```
 
