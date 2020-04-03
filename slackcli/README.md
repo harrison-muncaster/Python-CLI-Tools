@@ -7,17 +7,24 @@ Slack CLI requires `Python 3.7` or higher. See `requirements.txt` for dependenci
 
 ### Installation
 
+From terminal run the following commands.
+
+```bash
+brew install pipx
+pipx ensurepath
+```
+
 Clone/Download files from repo and save to any directory. Navigate to that directory in terminal and run the following command below.
 
 ```bash
-python3 setup.py install
+pipx install .
 ```
 
 ### Enviroment Variables
 To use the User & Channel commands you will need the Slack token.
 
-Once you have the token you will need to add it to your bash profile. Open 
-~/.bash_profile in terminal and add the following line:
+Once you have the token you will need to add it to your zsh profile. Open 
+~/.zshrc in terminal and add the following line:
 ```
 export SLACK_CLI_API="{token}"
 ```
