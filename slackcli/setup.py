@@ -6,7 +6,7 @@ setup(
     version='1.0',
     packages=find_packages(),
     install_requires=[
-        'aiohttp==3.6.2',
+        'aiohttp==3.7.4',
         'async-timeout==3.0.1',
         'attrs==19.3.0',
         'certifi==2019.11.28',
