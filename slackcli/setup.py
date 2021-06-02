@@ -20,7 +20,7 @@ setup(
         'reportlab==3.5.34',
         'slackclient==2.5.0',
         'typing-extensions==3.7.4.1',
-        'urllib3==1.25.8',
+        'urllib3==1.26.5',
         'yarl==1.4.2'
         ],
     entry_points='''
